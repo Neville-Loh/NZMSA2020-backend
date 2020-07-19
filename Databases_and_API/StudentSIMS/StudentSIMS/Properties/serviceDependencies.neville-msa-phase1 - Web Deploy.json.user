@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-07-19T07:02:58.8364706Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "SchoolSIMS"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "b13e976a-feb6-4daf-b17f-805ebfb566cc"
+    }
+  }
+}
