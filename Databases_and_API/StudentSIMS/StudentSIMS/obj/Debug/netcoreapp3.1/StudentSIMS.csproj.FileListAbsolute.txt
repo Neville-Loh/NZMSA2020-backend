@@ -151,3 +151,5 @@ C:\DEV\NZMSA_2020\Databases_and_API\StudentSIMS\StudentSIMS\bin\Debug\netcoreapp
 C:\DEV\NZMSA_2020\Databases_and_API\StudentSIMS\StudentSIMS\obj\Debug\netcoreapp3.1\StudentSIMS.csproj.CoreCompileInputs.cache
 C:\DEV\NZMSA_2020\Databases_and_API\StudentSIMS\StudentSIMS\obj\Debug\netcoreapp3.1\StudentSIMS.MvcApplicationPartsAssemblyInfo.cs
 C:\DEV\NZMSA_2020\Databases_and_API\StudentSIMS\StudentSIMS\obj\Debug\netcoreapp3.1\StudentSIMS.MvcApplicationPartsAssemblyInfo.cache
+C:\DEV\NZMSA_2020\Databases_and_API\StudentSIMS\StudentSIMS\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\DEV\NZMSA_2020\Databases_and_API\StudentSIMS\StudentSIMS\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.neville-msa-phase1 - Web Deploy.json

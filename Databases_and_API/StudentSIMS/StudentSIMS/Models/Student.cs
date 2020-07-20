@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace StudentSIMS.Models
 {
@@ -21,5 +22,8 @@ namespace StudentSIMS.Models
         public int phoneNumber { get; set; }
         [Timestamp]
         public DateTime timeCreated { get; set; }
+
+        [JsonIgnore]
+        public List<Address> addresses { get; set; }
     }
 }
