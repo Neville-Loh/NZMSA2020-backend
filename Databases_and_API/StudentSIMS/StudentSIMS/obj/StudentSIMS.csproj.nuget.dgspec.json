@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\NZMSA_2020\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj": {}
+    "C:\\DEV\\temp\\NZMSA2020-backend\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\NZMSA_2020\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj": {
+    "C:\\DEV\\temp\\NZMSA2020-backend\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\NZMSA_2020\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj",
+        "projectUniqueName": "C:\\DEV\\temp\\NZMSA2020-backend\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj",
         "projectName": "StudentSIMS",
-        "projectPath": "C:\\DEV\\NZMSA_2020\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj",
+        "projectPath": "C:\\DEV\\temp\\NZMSA2020-backend\\Databases_and_API\\StudentSIMS\\StudentSIMS\\StudentSIMS.csproj",
         "packagesPath": "C:\\Users\\Neville\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\NZMSA_2020\\Databases_and_API\\StudentSIMS\\StudentSIMS\\obj\\",
+        "outputPath": "C:\\DEV\\temp\\NZMSA2020-backend\\Databases_and_API\\StudentSIMS\\StudentSIMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Neville\\AppData\\Roaming\\NuGet\\NuGet.Config",
