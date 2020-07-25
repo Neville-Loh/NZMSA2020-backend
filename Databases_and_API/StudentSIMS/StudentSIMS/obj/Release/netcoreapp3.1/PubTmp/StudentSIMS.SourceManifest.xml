@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\DEV\NZMSA_2020\Databases_and_API\StudentSIMS\StudentSIMS\obj\Release\netcoreapp3.1\PubTmp\Out\" />
+  <IisApp path="C:\DEV\temp\NZMSA2020-backend\Databases_and_API\StudentSIMS\StudentSIMS\obj\Release\netcoreapp3.1\PubTmp\Out\" />
 </sitemanifest>
