@@ -113,5 +113,65 @@ namespace StudentSIMS.Controllers
         {
             return _context.Student.Any(e => e.studentId == id);
         }
+
+
+        // End point for Adding Adress for student
+        [HttpPost("{studentId}/AddAddress")]
+        public async Task<IActionResult> AddAddressForStudent(int studentId, Address newAddress)
+        {
+            if (studentId != newAddress.studentId)
+            {
+                return BadRequest();
+            }
+
+            var existingStudent = _context.Student.Where(s => s.studentId == studentId).Include(s => s.addresses).SingleOrDefault();
+
+            if (existingStudent != null)
+            {
+                existingStudent.addresses.Add(newAddress);
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+                return NotFound("Student Id does not exist");
+            }
+
+            return Ok();
+        }
+
+        // End point for Changing Adresses for student
+        [HttpPut("{studentId}/{addressId}/UpdateAddress")]
+        public async Task<IActionResult> UpdateAddressForStudent(int studentId, int addressId, Address updatedAddress)
+        {
+
+            if (studentId != updatedAddress.studentId || addressId != updatedAddress.addressId)
+            {
+                return BadRequest("Conflicting request, multiple student id or address id");
+            }
+
+            var existingStudent = _context.Student.Where(s => s.studentId == studentId).Include(s => s.addresses).SingleOrDefault();
+
+            if (existingStudent != null)
+            {
+                var existingAddress = existingStudent.addresses.Where(add => add.addressId == updatedAddress.addressId).SingleOrDefault();
+
+                if (existingAddress != null)
+                {
+                    _context.Entry(existingAddress).CurrentValues.SetValues(updatedAddress);
+                    await _context.SaveChangesAsync();
+                }
+                else
+                {
+                    return NotFound($"No address with address id is found for student");
+                }
+            }
+            else
+            {
+                return NotFound($"Student with studentId={studentId} does not exist");
+            }
+
+
+            return Ok();
+        }
     }
 }
