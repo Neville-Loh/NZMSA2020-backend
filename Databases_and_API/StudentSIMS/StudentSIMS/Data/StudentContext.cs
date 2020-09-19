@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using StudentSIMS.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace StudentSIMS.Data
 {
-    public class StudentContext : DbContext
+    public class StudentContext : IdentityDbContext
     {
         // an empty constructor
         public StudentContext() { }
@@ -21,6 +22,16 @@ namespace StudentSIMS.Data
         // write information about A Student
         public DbSet<Student> Student { get; set; }
         public DbSet<Address> Address { get; set; }
+
+        public DbSet<UserLogin> UserLogin { get; set; }
+
+        //public DbSet<UserLogin> 
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            //builder.Seed();
+        }
         public static System.Collections.Specialized.NameValueCollection AppSettings { get; }
 
         // configure the database to be used by this context
