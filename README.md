@@ -3,6 +3,9 @@ This project is developed for the event of Microsoft Student Accelerator New Zea
 2020 Phase 1. A backend is developed and deployed using Microsoft Azure Services.
 The API is created using code first method to generate database and controller.
 The model demonstrate a one to many relationship of data query and model.
+The core function included login, create user, and relational databalse.
+
+All endpoint controller is shown using Swagger. Please see link below
 
 
 API Endpoints with Azure SQL Database Server Link:  
